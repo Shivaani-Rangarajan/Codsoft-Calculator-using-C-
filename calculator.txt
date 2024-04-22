@@ -1,0 +1,39 @@
+#include<iostream>
+using namespace std;
+int main(){
+    char op;
+    float num1 , num2;
+    
+    cout << "Enter the two operands:" << endl;
+    cin >> num1 >> num2;
+    
+    cout << "Enter the operator either + or - or * or /:" << endl;
+    cin >> op;
+    
+    switch(op){
+        case '+':
+        cout << "num1 + num2 = " << num1+num2;
+        break;
+        
+        case '-':
+        cout << "num1 - num2 = " << num1-num2;
+        break;
+        
+        case '*':
+        cout << "num1 * num2 = " << num1*num2;
+        break;
+        
+        case '/':
+        if(num2!=0){
+          cout << "num1 / num2 = " << num1/num2;
+        }
+        else{
+            cout << "Error. Division by 0.";
+         break;
+            
+        }
+        default:
+        cout << "Error. Wrong choice of operator.";
+        
+    }
+}
